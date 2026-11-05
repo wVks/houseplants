@@ -1,0 +1,48 @@
+
+2026-11-05T12:40:18.783621+00:00 ['/usr/bin/python3', '-m', 'src.generate', '--run-dir', '/content/drive/MyDrive/houseplants_runs/0e734bee13c1', '--split', 'test', '--variant', 'sft']
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793882428.131401   17854 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:13<00:13, 13.49s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:22<00:00, 10.69s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:22<00:00, 11.11s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sft/test: 1/36
+sft/test: 2/36
+sft/test: 3/36
+sft/test: 4/36
+sft/test: 5/36
+sft/test: 6/36
+sft/test: 7/36
+sft/test: 8/36
+sft/test: 9/36
+sft/test: 10/36
+sft/test: 11/36
+sft/test: 12/36
+sft/test: 13/36
+sft/test: 14/36
+sft/test: 15/36
+sft/test: 16/36
+sft/test: 17/36
+sft/test: 18/36
+sft/test: 19/36
+sft/test: 20/36
+sft/test: 21/36
+sft/test: 22/36
+sft/test: 23/36
+sft/test: 24/36
+sft/test: 25/36
+sft/test: 26/36
+sft/test: 27/36
+sft/test: 28/36
+sft/test: 29/36
+sft/test: 30/36
+sft/test: 31/36
+sft/test: 32/36
+sft/test: 33/36
+sft/test: 34/36
+sft/test: 35/36
+sft/test: 36/36

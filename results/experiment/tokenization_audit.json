@@ -1,0 +1,23 @@
+{
+  "tokenizer_files_sha256": {
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  "splits": {
+    "train": {
+      "examples": 288,
+      "max_tokens": 522,
+      "min_assistant_tokens": 137
+    },
+    "validation": {
+      "examples": 12,
+      "max_tokens": 486,
+      "min_assistant_tokens": 144
+    },
+    "test": {
+      "examples": 36,
+      "max_tokens": 494,
+      "min_assistant_tokens": 136
+    }
+  }
+}

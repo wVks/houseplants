@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "fingerprint": "0e734bee13c1f7da6793821cf6f49cb44b2e70a9adc08743eaafd0f0e174b3f2",
+  "test_pairs": 36,
+  "metrics": "exact_match",
+  "bootstrap": "exact_match",
+  "judge_raw_json": "validated",
+  "adapter": {
+    "sha256": "cf59e34d24fba2b10dc971fcfdf4f809def7effb042b087615c4882353ed2924",
+    "parameters": 29933568,
+    "tensors": 504,
+    "all_finite": true
+  }
+}

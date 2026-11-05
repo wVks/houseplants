@@ -1,0 +1,17 @@
+{
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "judge_model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "seed": 42,
+  "max_length": 1024,
+  "max_new_tokens": 384,
+  "judge_max_new_tokens": 256,
+  "epochs": 2,
+  "learning_rate": 0.0001,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "judge_repeats": 6,
+  "bootstrap_samples": 2000
+}

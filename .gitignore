@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.cache/
+runs/
+dist/
+*.zip
+artifacts/*
+!artifacts/adapter/
+.publish/

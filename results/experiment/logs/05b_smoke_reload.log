@@ -1,0 +1,13 @@
+
+2026-11-05T12:03:49.244266+00:00 ['/usr/bin/python3', '-m', 'src.verify_adapter', '--run-dir', '/content/drive/MyDrive/houseplants_runs/0e734bee13c1']
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793880241.019806    8611 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.71s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:21<00:00, 10.50s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:21<00:00, 10.68s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Пробный адаптер загружен, генерация выполнена

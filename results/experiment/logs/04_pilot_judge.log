@@ -1,0 +1,188 @@
+
+2026-11-05T11:43:53.362409+00:00 ['/usr/bin/python3', '-m', 'src.judge', '--run-dir', '/content/drive/MyDrive/houseplants_runs/0e734bee13c1', '--split', 'validation', '--limit', '2', '--no-repeats']
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793879045.400775    3451 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files:  25%|██▌       | 1/4 [04:39<13:58, 279.40s/it]
+Fetching 4 files:  50%|█████     | 2/4 [04:39<04:39, 139.70s/it]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/dist-packages/urllib3/response.py", line 779, in _error_catcher
+    yield
+  File "/usr/local/lib/python3.13/dist-packages/urllib3/response.py", line 925, in _raw_read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+urllib3.exceptions.IncompleteRead: IncompleteRead(974519480 bytes read, 2890206944 more expected)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/dist-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/usr/local/lib/python3.13/dist-packages/urllib3/response.py", line 1091, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/usr/local/lib/python3.13/dist-packages/urllib3/response.py", line 1008, in read
+    data = self._raw_read(amt)
+  File "/usr/local/lib/python3.13/dist-packages/urllib3/response.py", line 903, in _raw_read
+    with self._error_catcher():
+         ~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/urllib3/response.py", line 803, in _error_catcher
+    raise ProtocolError(arg, e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(974519480 bytes read, 2890206944 more expected)', IncompleteRead(974519480 bytes read, 2890206944 more expected))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/content/houseplants/src/judge.py", line 88, in <module>
+    judge(args.run_dir, args.split, args.limit, not args.no_repeats)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/houseplants/src/judge.py", line 63, in judge
+    model, tokenizer = load_model(cfg["judge_model_id"], revisions[cfg["judge_model_id"]])
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/houseplants/src/modeling.py", line 27, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id, revision=revision, torch_dtype=torch.float16,
+        quantization_config=BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.float16),
+        device_map={"": 0}, attn_implementation="sdpa",
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py", line 1308, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py", line 1119, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+        pretrained_model_name_or_path,
+    ...<10 lines>...
+        _commit_hash=_commit_hash,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py", line 566, in cached_files
+    raise e
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py", line 493, in cached_files
+    snapshot_download(
+    ~~~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+    ~~~~~~~~~~^
+        _inner_hf_hub_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        tqdm_class=tqdm_class or hf_tqdm,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/usr/local/lib/python3.13/dist-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 625, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 318, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 453, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 402, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+        repo_id,
+    ...<15 lines>...
+        headers=headers,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py", line 1014, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py", line 1175, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        incomplete_path=Path(blob_path + ".incomplete"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        xet_file_data=xet_file_data,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py", line 1742, in _download_to_tmp_and_move
+    http_get(
+    ~~~~~~~~^
+        url_to_download,
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        expected_size=expected_size,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/file_download.py", line 500, in http_get
+    for chunk in r.iter_content(chunk_size=constants.DOWNLOAD_CHUNK_SIZE):
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/requests/models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(974519480 bytes read, 2890206944 more expected)', IncompleteRead(974519480 bytes read, 2890206944 more expected))
+
+2026-11-05T12:01:01.452782+00:00 ['/usr/bin/python3', '-m', 'src.judge', '--run-dir', '/content/drive/MyDrive/houseplants_runs/0e734bee13c1', '--split', 'validation', '--limit', '2', '--no-repeats']
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793880072.064092    7843 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:17<00:53, 17.79s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:35<00:35, 17.77s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:52<00:17, 17.58s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [01:08<00:00, 16.94s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [01:08<00:00, 17.21s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+judge/validation: 1/2; valid=True
+judge/validation: 2/2; valid=True

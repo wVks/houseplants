@@ -1,0 +1,1298 @@
+{
+  "metrics": {
+    "baseline": {
+      "n_expected": 36,
+      "format_pass_rate": 0.8611111111111112,
+      "generation_errors": 0,
+      "truncated": 0,
+      "judge_n_valid": 36,
+      "judge_coverage": 1.0,
+      "judge_common_n": 36,
+      "correctness": 3.388888888888889,
+      "usefulness": 4.472222222222222,
+      "context": 4.083333333333333,
+      "consistency": 3.8333333333333335,
+      "critical_error_rate": 0.19444444444444445
+    },
+    "sft": {
+      "n_expected": 36,
+      "format_pass_rate": 1,
+      "generation_errors": 0,
+      "truncated": 0,
+      "judge_n_valid": 36,
+      "judge_coverage": 1.0,
+      "judge_common_n": 36,
+      "correctness": 3.8333333333333335,
+      "usefulness": 4.666666666666667,
+      "context": 4.222222222222222,
+      "consistency": 4.388888888888889,
+      "critical_error_rate": 0.027777777777777776
+    }
+  },
+  "paired_deltas": {
+    "format_pass_rate": {
+      "mean": 0.1388888888888889,
+      "ci95": [
+        0.05555555555555555,
+        0.2222222222222222
+      ],
+      "n": 36
+    },
+    "correctness": {
+      "mean": 0.4444444444444444,
+      "ci95": [
+        -0.16666666666666666,
+        1.2222222222222223
+      ],
+      "n": 36
+    },
+    "usefulness": {
+      "mean": 0.19444444444444445,
+      "ci95": [
+        -0.3055555555555556,
+        0.6666666666666666
+      ],
+      "n": 36
+    },
+    "context": {
+      "mean": 0.1388888888888889,
+      "ci95": [
+        -0.3611111111111111,
+        0.6666666666666666
+      ],
+      "n": 36
+    },
+    "consistency": {
+      "mean": 0.5555555555555556,
+      "ci95": [
+        -0.16666666666666666,
+        1.2777777777777777
+      ],
+      "n": 36
+    },
+    "critical_error_rate": {
+      "mean": -0.16666666666666666,
+      "ci95": [
+        -0.3055555555555556,
+        -0.05555555555555555
+      ],
+      "n": 36
+    }
+  },
+  "per_case": [
+    {
+      "id": "monstera_dry_v0",
+      "plant": "монстера",
+      "topic": "dry",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неоднозначные указания о регулярном поливе через поддон, что может привести к переувлажнению."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации корректны и учитывают все данные."
+        }
+      }
+    },
+    {
+      "id": "monstera_pests_v0",
+      "plant": "монстера",
+      "topic": "pests",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 2,
+          "context": 2,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "советует использовать опасные бытовые химикаты и не уточняет конкретное средство для борьбы с насекомыми."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ учитывает все необходимые факторы и предлагает конкретные действия без противоречий."
+        }
+      }
+    },
+    {
+      "id": "monstera_specific_v0",
+      "plant": "монстера",
+      "topic": "specific",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в том, что молодые листья всегда могут быть цельными при правильном уходе, что может вызвать недоверие у пользователя."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная информация верна, но не учитывается возможность инфекционных заболеваний без осмотра."
+        }
+      }
+    },
+    {
+      "id": "snake_repot_v0",
+      "plant": "сансевиерия",
+      "topic": "repot",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 3,
+          "context": 3,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "обязательное использование горшка без дренажных отверстий может быть опасным для растения"
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации согласованы и основаны на фактических данных."
+        }
+      }
+    },
+    {
+      "id": "snake_winter_v0",
+      "plant": "сансевиерия",
+      "topic": "winter",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 3,
+          "context": 3,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "совет о регулярном поливе противоречит информации о снижении потребности в воде при прохладе"
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ согласован и учитывает все данные, не содержит ошибок и предлагает полезные действия."
+        }
+      }
+    },
+    {
+      "id": "snake_uncertain_v0",
+      "plant": "сансевиерия",
+      "topic": "uncertain",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и требования к информации корректны и согласованы."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "ответ учитывает необходимые данные, предлагает полезные действия и не содержит противоречий"
+        }
+      }
+    },
+    {
+      "id": "pothos_feed_v0",
+      "plant": "эпипремнум",
+      "topic": "feed",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и указания согласованы и учитывают все необходимые факторы."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная информация верна, но есть небольшая неточность в рекомендациях по выбору удобрения."
+        }
+      }
+    },
+    {
+      "id": "pothos_propagate_v0",
+      "plant": "эпипремнум",
+      "topic": "propagate",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 3,
+          "context": 3,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "Утверждение о том, что любой одиночный лист обязательно даст полноценный куст, является ошибочным и может ухудшить уход за растением."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 1,
+          "context": 1,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "утверждение о возможности размножения листом без узла является ошибочным для большинства видов растений."
+        }
+      }
+    },
+    {
+      "id": "pothos_drainage_v0",
+      "plant": "эпипремнум",
+      "topic": "drainage",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 2,
+          "context": 3,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "Утверждение, что камни полностью заменяют слив, является серьёзной ошибкой, которая может привести к застою воды."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточность, утверждая, что камни полностью заменяют слив, что может привести к застою воды."
+        }
+      }
+    },
+    {
+      "id": "peace_watering_v0",
+      "plant": "спатифиллум",
+      "topic": "watering",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "ответ согласуется с фактическими данными и не содержит ошибок или противоречий"
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в рекомендациях по поливу, что может привести к пересушке или переувлажнению растения."
+        }
+      }
+    },
+    {
+      "id": "peace_pests_v0",
+      "plant": "спатифиллум",
+      "topic": "pests",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ согласуется со всеми фактами и рекомендациями, не содержит ошибок и учитывает все необходимые аспекты."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации согласованы и учитывают данные вопроса."
+        }
+      }
+    },
+    {
+      "id": "peace_specific_v0",
+      "plant": "спатифиллум",
+      "topic": "specific",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ корректен, полезен, учитывает контекст и рекомендует согласованные действия."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в том, что сухие листья не всегда указывают на недостаток воды, хотя это может быть одной из причин."
+        }
+      }
+    },
+    {
+      "id": "zz_light_v0",
+      "plant": "замиокулькас",
+      "topic": "light",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточность в рекомендациях по адаптации растения к новому месту."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и уточнения корректны и согласованы с фактическими данными."
+        }
+      }
+    },
+    {
+      "id": "zz_winter_v0",
+      "plant": "замиокулькас",
+      "topic": "winter",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ согласуется с фактическими данными и не содержит противоречий или ошибок."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточность в рекомендациях по изменению полива без учета фактической влажности субстрата."
+        }
+      }
+    },
+    {
+      "id": "zz_uncertain_v0",
+      "plant": "замиокулькас",
+      "topic": "uncertain",
+      "baseline": {
+        "format_pass": 0,
+        "format_errors": [
+          "heading_count:Краткий ответ",
+          "heading_count:Рекомендации",
+          "heading_order",
+          "recommendations_count"
+        ],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Вопросы и уточнения согласуются с фактическими данными и не содержат ошибок."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и вопросы учитывают необходимость уточнения условий и не содержат противоречий."
+        }
+      }
+    },
+    {
+      "id": "ficus_wet_v0",
+      "plant": "фикус эластика",
+      "topic": "wet",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточности, например, о регулировании полива без проверки состояния корневой системы."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная неточность заключается в повторении одного и того же признака пересыхания и гниения."
+        }
+      }
+    },
+    {
+      "id": "ficus_propagate_v0",
+      "plant": "фикус эластика",
+      "topic": "propagate",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все указания согласованы и основаны на реальных фактах, не содержит ошибочных заявлений."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Основная неточность в том, что одиночный лист без узла стебля не даст полноценного растения, хотя и есть риск размножения."
+        }
+      }
+    },
+    {
+      "id": "ficus_drainage_v0",
+      "plant": "фикус эластика",
+      "topic": "drainage",
+      "baseline": {
+        "format_pass": 0,
+        "format_errors": [
+          "heading_count:Рекомендации",
+          "heading_order",
+          "recommendations_count"
+        ],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 3,
+          "context": 3,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "совет оставить воду после полива содержит серьёзную ошибку, которая может привести к загниванию корней."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в утверждении, что камни полностью заменяют слив, что может быть потенциально опасным для растения."
+        }
+      }
+    },
+    {
+      "id": "spider_watering_v0",
+      "plant": "хлорофитум",
+      "topic": "watering",
+      "baseline": {
+        "format_pass": 0,
+        "format_errors": [
+          "heading_count:Рекомендации",
+          "heading_order",
+          "recommendations_count"
+        ],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная информация верна, но есть небольшая неточность в интерпретации толстых корней."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации согласованы и основаны на фактических данных."
+        }
+      }
+    },
+    {
+      "id": "spider_dry_v0",
+      "plant": "хлорофитум",
+      "topic": "dry",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - нет упоминания о том, что мякоть корней хлорофитума может быть повреждена при пересушке, что требует более осторожного подхода к поливу."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 1,
+          "context": 1,
+          "consistency": 1,
+          "critical_error": false,
+          "reason": "回答中存在潜在的错误建议，即'常将花盆浸泡在水中'，这与参考事实中的建议相矛盾。"
+        }
+      }
+    },
+    {
+      "id": "spider_specific_v0",
+      "plant": "хлорофитум",
+      "topic": "specific",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ согласуется со всеми фактами и рекомендациями."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ учитывает все данные, предлагает проверить возможные причины и дает конкретные рекомендации."
+        }
+      }
+    },
+    {
+      "id": "orchid_light_v0",
+      "plant": "фаленопсис",
+      "topic": "light",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточность в рекомендациях по уходу за растением, так как увлажнение субстрата не решает проблему недостатка света."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации согласованы с фактическими данными и не содержат ошибок."
+        }
+      }
+    },
+    {
+      "id": "orchid_repot_v0",
+      "plant": "фаленопсис",
+      "topic": "repot",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ точно описывает проблему и предлагает подходящие решения, учитывая специфические требования орхидей."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ содержит все необходимые и точные рекомендации, учитывает условия и не противоречит самому себе."
+        }
+      }
+    },
+    {
+      "id": "orchid_uncertain_v0",
+      "plant": "фаленопсис",
+      "topic": "uncertain",
+      "baseline": {
+        "format_pass": 0,
+        "format_errors": [
+          "heading_count:Краткий ответ",
+          "heading_count:Рекомендации",
+          "heading_order",
+          "recommendations_count"
+        ],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ содержит все необходимые и корректные шаги для диагностики состояния орхидеи, учитывает все данные и не противоречит самому себе."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в утверждении, что после цветения всегда зависит от вида и сезона, что может быть неверным для всех видов орхидей."
+        }
+      }
+    },
+    {
+      "id": "jade_wet_v0",
+      "plant": "толстянка",
+      "topic": "wet",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная неточность в том, что без проверки уровня влажности почвы рекомендуют сразу полить, что может привести к переувлажнению."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ согласован и учитывает все важные аспекты состояния растения и необходимости проверки."
+        }
+      }
+    },
+    {
+      "id": "jade_feed_v0",
+      "plant": "толстянка",
+      "topic": "feed",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все указания согласованы и основаны на фактических данных."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточности в рекомендациях по подкормке и игнорирует важные аспекты ухода."
+        }
+      }
+    },
+    {
+      "id": "jade_drainage_v0",
+      "plant": "толстянка",
+      "topic": "drainage",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и уточнения корректны и согласованы."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в утверждении, что камни полностью заменяют слив, хотя это не совсем верно, но не ухудшает уход за растением."
+        }
+      }
+    },
+    {
+      "id": "aloe_watering_v0",
+      "plant": "алоэ вера",
+      "topic": "watering",
+      "baseline": {
+        "format_pass": 0,
+        "format_errors": [
+          "heading_count:Рекомендации",
+          "heading_count:Что уточнить",
+          "heading_order",
+          "recommendations_count"
+        ],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 3,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "建议中存在矛盾，既建议等待土壤完全干燥，又建议轻柔地用喷壶喷洒少量水，这可能导致过度浇水。"
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации основаны на фактических данных и не противоречат друг другу."
+        }
+      }
+    },
+    {
+      "id": "aloe_dry_v0",
+      "plant": "алоэ вера",
+      "topic": "dry",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в рекомендациях по проверке глубины проливов, что может привести к перенасыщению питательной среды."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и уточнения корректны и согласованы."
+        }
+      }
+    },
+    {
+      "id": "aloe_pests_v0",
+      "plant": "алоэ вера",
+      "topic": "pests",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 2,
+          "context": 3,
+          "consistency": 1,
+          "critical_error": true,
+          "reason": "совет о смешивании бытовых химикатов содержит серьёзную ошибку, которая может быть опасной для растений."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Ответ содержит все необходимые элементы и не содержит ошибок."
+        }
+      }
+    },
+    {
+      "id": "calathea_light_v0",
+      "plant": "калатея орбифолия",
+      "topic": "light",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации корректны и учитывают условия, описанные в вопросе."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная информация верна, но отсутствует упоминание о том, что Калатея орбифолия предпочитает рассеянный свет, что важно для правильного выбора места."
+        }
+      }
+    },
+    {
+      "id": "calathea_repot_v0",
+      "plant": "калатея орбифолия",
+      "topic": "repot",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Ответ содержит неточность в выборе типа почвы и размера горшка, не учитывает важные детали."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в рекомендациях по выбору горшка: советы о том, что размер горшка зависит от состояния корней и субстрата, противоречат факту о том, что сильно увеличивать размер горшка не требуется."
+        }
+      }
+    },
+    {
+      "id": "calathea_winter_v0",
+      "plant": "калатея орбифолия",
+      "topic": "winter",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "не учтены особенности содержания Калатеи при неравномерной влажности и необходимость контроля влажности почвы."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 3,
+          "critical_error": false,
+          "reason": "Основная информация верна, но есть неточность в рекомендациях по поливу и отсутствуют конкретные указания на ухудшение состояния растения."
+        }
+      }
+    },
+    {
+      "id": "holiday_wet_v0",
+      "plant": "шлюмбергера",
+      "topic": "wet",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 3,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в рекомендациях по проверке состояния корней, что может привести к неправильным действиям."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и проверки согласованы и учитывают все возможные причины проблемы."
+        }
+      }
+    },
+    {
+      "id": "holiday_feed_v0",
+      "plant": "шлюмбергера",
+      "topic": "feed",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в рекомендациях по подкормке, которая может быть опасной."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 5,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Все рекомендации и уточнения корректны и согласованы."
+        }
+      }
+    },
+    {
+      "id": "holiday_propagate_v0",
+      "plant": "шлюмбергера",
+      "topic": "propagate",
+      "baseline": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 3,
+          "usefulness": 5,
+          "context": 5,
+          "consistency": 5,
+          "critical_error": false,
+          "reason": "Основная причина оценки - неточность в рекомендациях по обрезке веточки: веточку нужно обрезать на уровне листьев, а не на уровне листьев с углом 45°."
+        }
+      },
+      "sft": {
+        "format_pass": 1,
+        "format_errors": [],
+        "generation_error": false,
+        "truncated": false,
+        "score": {
+          "correctness": 1,
+          "usefulness": 1,
+          "context": 1,
+          "consistency": 1,
+          "critical_error": false,
+          "reason": "ответ не относится к вопросу о подготовке веточки к укоренению, вместо этого он предоставляет общие рекомендации по уходу за растением."
+        }
+      }
+    }
+  ],
+  "status": "measured",
+  "judge_repeat_mean_absolute_difference": 0.4166666666666667,
+  "judge_repeat_n": 6
+}

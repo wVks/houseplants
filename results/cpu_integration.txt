@@ -1,0 +1,27 @@
+{'loss': 4.1894, 'grad_norm': 0.7860676050186157, 'learning_rate': 0.01, 'epoch': 1.0}
+{'loss': 4.1024, 'grad_norm': 0.8363051414489746, 'learning_rate': 0.005, 'epoch': 2.0}
+{'train_runtime': 0.0076, 'train_samples_per_second': 526.245, 'train_steps_per_second': 263.122, 'train_loss': 4.1459105014801025, 'epoch': 2.0}
+CPU integration: PASSED {'train': {'examples': 288, 'max_tokens': 522, 'min_assistant_tokens': 137}, 'validation': {'examples': 12, 'max_tokens': 486, 'min_assistant_tokens': 144}, 'test': {'examples': 36, 'max_tokens': 494, 'min_assistant_tokens': 136}}
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 288 examples [00:00, 60025.82 examples/s]
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 12 examples [00:00, 9374.49 examples/s]
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 36 examples [00:00, 26924.92 examples/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+                                     
+
+ 50%|█████     | 1/2 [00:00<00:00, 225.28it/s]
+                                              
+
+100%|██████████| 2/2 [00:00<00:00, 279.65it/s]
+                                              
+
+100%|██████████| 2/2 [00:00<00:00, 271.31it/s]
+100%|██████████| 2/2 [00:00<00:00, 261.82it/s]
+/Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(

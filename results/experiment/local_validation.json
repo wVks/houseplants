@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "at": "2026-11-04T22:23:08.819141+00:00",
+  "environment": {
+    "time_utc": "2026-11-04T22:23:08.821516+00:00",
+    "python": "3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "packages": {
+      "torch": "2.8.0",
+      "transformers": "4.56.2",
+      "peft": "0.17.1",
+      "datasets": "4.1.1",
+      "accelerate": "1.10.1"
+    }
+  },
+  "checks": [
+    "real_qwen_tokenizer_all_examples_under_1024",
+    "datasets_load_dataset_all_splits",
+    "prompt_labels_masked",
+    "eos_labels_kept",
+    "padding_labels_masked",
+    "cpu_tiny_qwen_lora_two_steps",
+    "trainable_parameters_changed",
+    "safetensors_saved",
+    "adapter_reload_logits_match"
+  ],
+  "scope": "Случайная маленькая CPU-модель; целевые веса 3B не обучались, T4 и bitsandbytes не проверены."
+}

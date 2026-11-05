@@ -1,0 +1,18 @@
+
+2026-11-05T11:41:42.624788+00:00 ['/usr/bin/python3', '-m', 'src.generate', '--run-dir', '/content/drive/MyDrive/houseplants_runs/0e734bee13c1', '--split', 'validation', '--variant', 'baseline', '--limit', '2']
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793878923.118905    2876 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Fetching 2 files:  50%|█████     | 1/2 [00:42<00:42, 42.63s/it]
+Fetching 2 files: 100%|██████████| 2/2 [00:42<00:00, 21.31s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:13<00:13, 13.37s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:21<00:00, 10.55s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:21<00:00, 10.98s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+baseline/validation: 1/2
+baseline/validation: 2/2

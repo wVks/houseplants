@@ -1,0 +1,84 @@
+[
+  {
+    "name": "correct",
+    "answer": "Краткий ответ:\nПричин может быть несколько.\n\nРекомендации:\n- Проверьте влажность субстрата.\n- Осмотрите дренажные отверстия.\n\nЧто уточнить:\nКакое растение и когда был последний полив?",
+    "expected": true,
+    "actual": {
+      "passed": true,
+      "errors": [],
+      "recommendation_count": 2
+    }
+  },
+  {
+    "name": "markdown",
+    "answer": "### **Краткий ответ:**\nПричин может быть несколько.\n\nРекомендации:\n- Проверьте влажность субстрата.\n- Осмотрите дренажные отверстия.\n\nЧто уточнить:\nКакое растение и когда был последний полив?",
+    "expected": true,
+    "actual": {
+      "passed": true,
+      "errors": [],
+      "recommendation_count": 2
+    }
+  },
+  {
+    "name": "missing_section",
+    "answer": "Краткий ответ:\nПричин может быть несколько.\n\nРекомендации:\n- Проверьте влажность субстрата.\n- Осмотрите дренажные отверстия.\n\n",
+    "expected": false,
+    "actual": {
+      "passed": false,
+      "errors": [
+        "heading_count:Что уточнить",
+        "heading_order"
+      ],
+      "recommendation_count": 2
+    }
+  },
+  {
+    "name": "empty_section",
+    "answer": "Краткий ответ:\n\n\nРекомендации:\n- Проверьте влажность субстрата.\n- Осмотрите дренажные отверстия.\n\nЧто уточнить:\nКакое растение и когда был последний полив?",
+    "expected": false,
+    "actual": {
+      "passed": false,
+      "errors": [
+        "empty_section:Краткий ответ"
+      ],
+      "recommendation_count": 2
+    }
+  },
+  {
+    "name": "prose_instead_of_list",
+    "answer": "Краткий ответ:\nПричин может быть несколько.\n\nРекомендации:\nПроверьте влажность субстрата.\nОсмотрите дренажные отверстия.\n\nЧто уточнить:\nКакое растение и когда был последний полив?",
+    "expected": false,
+    "actual": {
+      "passed": false,
+      "errors": [
+        "recommendations_count"
+      ],
+      "recommendation_count": 0
+    }
+  },
+  {
+    "name": "duplicate_heading",
+    "answer": "Краткий ответ:\nПричин может быть несколько.\n\nРекомендации:\n- Проверьте влажность субстрата.\n- Осмотрите дренажные отверстия.\n\nЧто уточнить:\nКакое растение и когда был последний полив?\nЧто уточнить:\nЕщё вопрос.",
+    "expected": false,
+    "actual": {
+      "passed": false,
+      "errors": [
+        "heading_count:Что уточнить",
+        "heading_order"
+      ],
+      "recommendation_count": 2
+    }
+  },
+  {
+    "name": "wrong_order",
+    "answer": "Что уточнить:\nПричин может быть несколько.\n\nРекомендации:\n- Проверьте влажность субстрата.\n- Осмотрите дренажные отверстия.\n\nКраткий ответ:\nКакое растение и когда был последний полив?",
+    "expected": false,
+    "actual": {
+      "passed": false,
+      "errors": [
+        "heading_order"
+      ],
+      "recommendation_count": 2
+    }
+  }
+]

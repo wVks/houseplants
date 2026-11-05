@@ -1,0 +1,9 @@
+{
+  "unit_and_artifact_tests": "passed",
+  "unit_test_count": 15,
+  "syntax": "passed",
+  "missing_cuda_error_and_archive": "passed",
+  "project_fingerprint": "0e734bee13c1f7da6793821cf6f49cb44b2e70a9adc08743eaafd0f0e174b3f2",
+  "target_gpu_run": "completed_and_audited",
+  "input_archive": "houseplants_results-2.zip"
+}

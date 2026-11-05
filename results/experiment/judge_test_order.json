@@ -1,0 +1,476 @@
+[
+  {
+    "job_id": "sft:zz_winter_v0",
+    "variant": "sft",
+    "id": "zz_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:spider_watering_v0",
+    "variant": "baseline",
+    "id": "spider_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:calathea_light_v0",
+    "variant": "baseline",
+    "id": "calathea_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:peace_pests_v0",
+    "variant": "sft",
+    "id": "peace_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:pothos_propagate_v0",
+    "variant": "baseline",
+    "id": "pothos_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:spider_specific_v0",
+    "variant": "baseline",
+    "id": "spider_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:ficus_wet_v0",
+    "variant": "baseline",
+    "id": "ficus_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:holiday_wet_v0",
+    "variant": "baseline",
+    "id": "holiday_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:ficus_propagate_v0",
+    "variant": "sft",
+    "id": "ficus_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:snake_winter_v0",
+    "variant": "baseline",
+    "id": "snake_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:monstera_dry_v0",
+    "variant": "sft",
+    "id": "monstera_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:pothos_feed_v0",
+    "variant": "sft",
+    "id": "pothos_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:pothos_propagate_v0",
+    "variant": "sft",
+    "id": "pothos_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:zz_light_v0",
+    "variant": "sft",
+    "id": "zz_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:ficus_propagate_v0",
+    "variant": "baseline",
+    "id": "ficus_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:orchid_light_v0",
+    "variant": "sft",
+    "id": "orchid_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:aloe_pests_v0",
+    "variant": "baseline",
+    "id": "aloe_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:spider_specific_v0",
+    "variant": "sft",
+    "id": "spider_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:calathea_winter_v0",
+    "variant": "sft",
+    "id": "calathea_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:jade_drainage_v0",
+    "variant": "sft",
+    "id": "jade_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:ficus_drainage_v0",
+    "variant": "sft",
+    "id": "ficus_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:holiday_feed_v0",
+    "variant": "sft",
+    "id": "holiday_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:snake_repot_v0",
+    "variant": "sft",
+    "id": "snake_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:peace_specific_v0",
+    "variant": "sft",
+    "id": "peace_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:orchid_uncertain_v0",
+    "variant": "baseline",
+    "id": "orchid_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:spider_dry_v0",
+    "variant": "sft",
+    "id": "spider_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:jade_feed_v0",
+    "variant": "baseline",
+    "id": "jade_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:pothos_drainage_v0",
+    "variant": "baseline",
+    "id": "pothos_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:spider_dry_v0",
+    "variant": "baseline",
+    "id": "spider_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:aloe_dry_v0",
+    "variant": "sft",
+    "id": "aloe_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:ficus_wet_v0",
+    "variant": "sft",
+    "id": "ficus_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:orchid_repot_v0",
+    "variant": "baseline",
+    "id": "orchid_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:aloe_watering_v0",
+    "variant": "sft",
+    "id": "aloe_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:jade_wet_v0",
+    "variant": "baseline",
+    "id": "jade_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:jade_wet_v0",
+    "variant": "sft",
+    "id": "jade_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:pothos_feed_v0",
+    "variant": "baseline",
+    "id": "pothos_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:snake_winter_v0",
+    "variant": "sft",
+    "id": "snake_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:orchid_uncertain_v0",
+    "variant": "sft",
+    "id": "orchid_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:peace_watering_v0",
+    "variant": "baseline",
+    "id": "peace_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:zz_uncertain_v0",
+    "variant": "sft",
+    "id": "zz_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:orchid_light_v0",
+    "variant": "baseline",
+    "id": "orchid_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:aloe_watering_v0",
+    "variant": "baseline",
+    "id": "aloe_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:peace_pests_v0",
+    "variant": "baseline",
+    "id": "peace_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:monstera_dry_v0",
+    "variant": "baseline",
+    "id": "monstera_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:calathea_light_v0",
+    "variant": "sft",
+    "id": "calathea_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:monstera_pests_v0",
+    "variant": "sft",
+    "id": "monstera_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:calathea_repot_v0",
+    "variant": "sft",
+    "id": "calathea_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:orchid_repot_v0",
+    "variant": "sft",
+    "id": "orchid_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:jade_drainage_v0",
+    "variant": "baseline",
+    "id": "jade_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:holiday_feed_v0",
+    "variant": "baseline",
+    "id": "holiday_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:pothos_drainage_v0",
+    "variant": "sft",
+    "id": "pothos_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:snake_uncertain_v0",
+    "variant": "sft",
+    "id": "snake_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:peace_watering_v0",
+    "variant": "sft",
+    "id": "peace_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:zz_light_v0",
+    "variant": "baseline",
+    "id": "zz_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:holiday_wet_v0",
+    "variant": "sft",
+    "id": "holiday_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:jade_feed_v0",
+    "variant": "sft",
+    "id": "jade_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:monstera_specific_v0",
+    "variant": "sft",
+    "id": "monstera_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:calathea_winter_v0",
+    "variant": "baseline",
+    "id": "calathea_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:holiday_propagate_v0",
+    "variant": "sft",
+    "id": "holiday_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:aloe_pests_v0",
+    "variant": "sft",
+    "id": "aloe_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:snake_uncertain_v0",
+    "variant": "baseline",
+    "id": "snake_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:monstera_pests_v0",
+    "variant": "baseline",
+    "id": "monstera_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:monstera_specific_v0",
+    "variant": "baseline",
+    "id": "monstera_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:spider_watering_v0",
+    "variant": "sft",
+    "id": "spider_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:peace_specific_v0",
+    "variant": "baseline",
+    "id": "peace_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:zz_winter_v0",
+    "variant": "baseline",
+    "id": "zz_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:ficus_drainage_v0",
+    "variant": "baseline",
+    "id": "ficus_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:aloe_dry_v0",
+    "variant": "baseline",
+    "id": "aloe_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:calathea_repot_v0",
+    "variant": "baseline",
+    "id": "calathea_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:holiday_propagate_v0",
+    "variant": "baseline",
+    "id": "holiday_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:snake_repot_v0",
+    "variant": "baseline",
+    "id": "snake_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:zz_uncertain_v0",
+    "variant": "baseline",
+    "id": "zz_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:spider_specific_v0:repeat",
+    "variant": "baseline",
+    "id": "spider_specific_v0",
+    "repeat": true,
+    "repeat_type": "reversed_payload_fields"
+  },
+  {
+    "job_id": "baseline:pothos_propagate_v0:repeat",
+    "variant": "baseline",
+    "id": "pothos_propagate_v0",
+    "repeat": true,
+    "repeat_type": "reversed_payload_fields"
+  },
+  {
+    "job_id": "sft:peace_pests_v0:repeat",
+    "variant": "sft",
+    "id": "peace_pests_v0",
+    "repeat": true,
+    "repeat_type": "reversed_payload_fields"
+  },
+  {
+    "job_id": "baseline:calathea_light_v0:repeat",
+    "variant": "baseline",
+    "id": "calathea_light_v0",
+    "repeat": true,
+    "repeat_type": "reversed_payload_fields"
+  },
+  {
+    "job_id": "baseline:spider_watering_v0:repeat",
+    "variant": "baseline",
+    "id": "spider_watering_v0",
+    "repeat": true,
+    "repeat_type": "reversed_payload_fields"
+  },
+  {
+    "job_id": "sft:zz_winter_v0:repeat",
+    "variant": "sft",
+    "id": "zz_winter_v0",
+    "repeat": true,
+    "repeat_type": "reversed_payload_fields"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "input_archive": {
+    "filename": "houseplants_results-2.zip",
+    "sha256": "6cb6996fca5a8b7ff1716447b8ae18b4fef736b5ea27e358928f9c29a1338b0d",
+    "bytes": 114499624,
+    "source": "user-supplied Colab output",
+    "fingerprint": "0e734bee13c1f7da6793821cf6f49cb44b2e70a9adc08743eaafd0f0e174b3f2"
+  },
+  "test_questions": 36,
+  "judge_coverage": {
+    "baseline": 36,
+    "sft": 36
+  },
+  "metrics_recompute": "exact_match",
+  "bootstrap_recompute": "exact_match",
+  "adapter": {
+    "tensors": 504,
+    "parameters": 29933568,
+    "bytes": 119801528,
+    "sha256": "cf59e34d24fba2b10dc971fcfdf4f809def7effb042b087615c4882353ed2924",
+    "all_values_finite": true
+  },
+  "smoke_adapter_reload": "passed",
+  "target_training_completed": "completed"
+}

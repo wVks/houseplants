@@ -1,0 +1,45 @@
+{
+  "fingerprint": "0e734bee13c1f7da6793821cf6f49cb44b2e70a9adc08743eaafd0f0e174b3f2",
+  "created_at": "2026-11-05T11:41:35.332466+00:00",
+  "completed": [
+    "01_data_audit",
+    "02_format_check",
+    "03_first_answers",
+    "04_pilot_judge",
+    "05_smoke_training",
+    "05b_smoke_reload",
+    "06_baseline_validation",
+    "07_baseline_test",
+    "08_training",
+    "09_sft_validation",
+    "10_sft_test",
+    "11_judge_validation",
+    "12_judge_test",
+    "13_evaluation",
+    "14_report"
+  ],
+  "durations_seconds": {
+    "01_data_audit": 1.4665586669999584,
+    "02_format_check": 0.06823278499996377,
+    "03_first_answers": 130.72398947599993,
+    "04_pilot_judge": 107.75840462499991,
+    "05_smoke_training": 59.99144318000003,
+    "05b_smoke_reload": 51.3934211950002,
+    "06_baseline_validation": 203.5974640889999,
+    "07_baseline_test": 676.2734702459998,
+    "08_training": 881.6077473330001,
+    "09_sft_validation": 376.528810795,
+    "10_sft_test": 1061.1924320550006,
+    "11_judge_validation": 259.1046061699999,
+    "12_judge_test": 649.7828706460004,
+    "13_evaluation": 1.8777259359994787,
+    "14_report": 0.13115755499984516
+  },
+  "status": "computed",
+  "pipeline_error": {
+    "type": "RuntimeError",
+    "message": "Этап 04_pilot_judge завершился с кодом 1. Лог: /content/drive/MyDrive/houseplants_runs/0e734bee13c1/logs/04_pilot_judge.log. Повторный запуск продолжит с этого этапа.",
+    "at": "2026-11-05T11:48:56.794094+00:00"
+  },
+  "finished_at": "2026-11-05T13:13:10.926523+00:00"
+}

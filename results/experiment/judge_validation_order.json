@@ -1,0 +1,146 @@
+[
+  {
+    "job_id": "sft:peace_dry_v0",
+    "variant": "sft",
+    "id": "peace_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:ficus_feed_v0",
+    "variant": "baseline",
+    "id": "ficus_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:spider_pests_v0",
+    "variant": "sft",
+    "id": "spider_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:holiday_drainage_v0",
+    "variant": "sft",
+    "id": "holiday_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:snake_light_v0",
+    "variant": "sft",
+    "id": "snake_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:calathea_uncertain_v0",
+    "variant": "baseline",
+    "id": "calathea_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:ficus_feed_v0",
+    "variant": "sft",
+    "id": "ficus_feed_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:holiday_drainage_v0",
+    "variant": "baseline",
+    "id": "holiday_drainage_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:pothos_wet_v0",
+    "variant": "sft",
+    "id": "pothos_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:zz_repot_v0",
+    "variant": "sft",
+    "id": "zz_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:snake_light_v0",
+    "variant": "baseline",
+    "id": "snake_light_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:monstera_watering_v0",
+    "variant": "sft",
+    "id": "monstera_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:aloe_specific_v0",
+    "variant": "sft",
+    "id": "aloe_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:spider_pests_v0",
+    "variant": "baseline",
+    "id": "spider_pests_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:aloe_specific_v0",
+    "variant": "baseline",
+    "id": "aloe_specific_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:pothos_wet_v0",
+    "variant": "baseline",
+    "id": "pothos_wet_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:calathea_uncertain_v0",
+    "variant": "sft",
+    "id": "calathea_uncertain_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:zz_repot_v0",
+    "variant": "baseline",
+    "id": "zz_repot_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:orchid_winter_v0",
+    "variant": "sft",
+    "id": "orchid_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:orchid_winter_v0",
+    "variant": "baseline",
+    "id": "orchid_winter_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:jade_propagate_v0",
+    "variant": "baseline",
+    "id": "jade_propagate_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:monstera_watering_v0",
+    "variant": "baseline",
+    "id": "monstera_watering_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "baseline:peace_dry_v0",
+    "variant": "baseline",
+    "id": "peace_dry_v0",
+    "repeat": false
+  },
+  {
+    "job_id": "sft:jade_propagate_v0",
+    "variant": "sft",
+    "id": "jade_propagate_v0",
+    "repeat": false
+  }
+]

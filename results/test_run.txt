@@ -1,0 +1,36 @@
+Оценка: measured /var/folders/j1/50ty8fc14yb69v2vm_fkwxnm0000gp/T/tmpd0iyg80f/evaluation
+Отчёт: /var/folders/j1/50ty8fc14yb69v2vm_fkwxnm0000gp/T/tmpd0iyg80f/report.md
+Обрыв загрузки model: HTTPError. Через 5 с — попытка 2/4; скачанные файлы и незавершённые части сохраняются в кэше.
+Обрыв загрузки model: ChunkedEncodingError. Через 5 с — попытка 2/4; скачанные файлы и незавершённые части сохраняются в кэше.
+Обрыв загрузки model: ChunkedEncodingError. Через 5 с — попытка 2/3; скачанные файлы и незавершённые части сохраняются в кэше.
+Обрыв загрузки model: ChunkedEncodingError. Через 10 с — попытка 3/3; скачанные файлы и незавершённые части сохраняются в кэше.
+test_metrics_charts_report_and_archive (test_artifacts.ArtifactTests) ... /Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /Users/m.a.fetisov/Desktop/houseplants/.venv/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+ok
+test_documented_examples (test_core.FormatTests) ... ok
+test_empty_answer (test_core.FormatTests) ... ok
+test_empty_bullets_are_not_actions (test_core.FormatTests) ... ok
+test_extract_markdown_json (test_core.JudgeTests) ... ok
+test_invalid_scores_are_not_accepted (test_core.JudgeTests) ... ok
+test_missing_generations_and_judge_scores (test_core.MetricTests) ... ok
+test_paired_bootstrap_preserves_constant_difference (test_core.MetricTests) ... ok
+test_repeats_do_not_change_main_score (test_core.MetricTests) ... ok
+test_loss_excludes_prompt_and_includes_end (test_core.TokenTests) ... ok
+test_disk_error_is_not_retried (test_downloads.DownloadTests) ... ok
+test_http_503_is_retried (test_downloads.DownloadTests) ... ok
+test_interrupted_stream_is_retried_without_discarding_cache (test_downloads.DownloadTests) ... ok
+test_permission_denial_is_not_retried (test_downloads.DownloadTests) ... ok
+test_retry_limit (test_downloads.DownloadTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.450s
+
+OK

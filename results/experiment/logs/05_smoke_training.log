@@ -1,0 +1,57 @@
+
+2026-11-05T12:02:49.232075+00:00 ['/usr/bin/python3', '-m', 'src.train', '--run-dir', '/content/drive/MyDrive/houseplants_runs/0e734bee13c1', '--smoke']
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793880179.740654    8329 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:12<00:12, 12.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:21<00:00, 10.67s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:21<00:00, 10.93s/it]
+trainable params: 29,933,568 || all params: 3,115,872,256 || trainable%: 0.9607
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+ 50%|█████     | 1/2 [00:02<00:02,  2.38s/it]
+                                             
+{'loss': 2.1502, 'grad_norm': 3.7500879764556885, 'learning_rate': 0.0, 'epoch': 0.12}
+
+ 50%|█████     | 1/2 [00:02<00:02,  2.38s/it]
+100%|██████████| 2/2 [00:03<00:00,  1.69s/it]
+                                             
+{'loss': 2.2004, 'grad_norm': 3.4049673080444336, 'learning_rate': 0.0001, 'epoch': 0.25}
+
+100%|██████████| 2/2 [00:03<00:00,  1.69s/it]
+
+  0%|          | 0/8 [00:00<?, ?it/s][A
+
+ 25%|██▌       | 2/8 [00:00<00:01,  5.77it/s][A
+
+ 38%|███▊      | 3/8 [00:00<00:01,  3.96it/s][A
+
+ 50%|█████     | 4/8 [00:01<00:01,  3.38it/s][A
+
+ 62%|██████▎   | 5/8 [00:01<00:00,  3.14it/s][A
+
+ 75%|███████▌  | 6/8 [00:01<00:00,  3.01it/s][A
+
+ 88%|████████▊ | 7/8 [00:02<00:00,  2.89it/s][A
+
+100%|██████████| 8/8 [00:02<00:00,  2.82it/s][A
+                                             
+
+                                             
+[A{'eval_loss': 1.9876917600631714, 'eval_runtime': 2.9083, 'eval_samples_per_second': 2.751, 'eval_steps_per_second': 2.751, 'epoch': 0.25}
+
+100%|██████████| 2/2 [00:06<00:00,  1.69s/it]
+
+100%|██████████| 8/8 [00:02<00:00,  2.82it/s][A
+
+                                             [A
+                                             
+{'train_runtime': 9.5421, 'train_samples_per_second': 0.21, 'train_steps_per_second': 0.21, 'train_loss': 2.175296664237976, 'epoch': 0.25}
+
+100%|██████████| 2/2 [00:09<00:00,  1.69s/it]
+100%|██████████| 2/2 [00:09<00:00,  4.77s/it]
+Адаптер сохранён: /content/drive/MyDrive/houseplants_runs/0e734bee13c1/smoke_adapter
