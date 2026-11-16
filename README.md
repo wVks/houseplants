@@ -6,7 +6,7 @@
 
 [Открыть ноутбук в Google Colab](https://colab.research.google.com/github/wVks/houseplants/blob/main/notebooks/colab_pipeline.ipynb)
 
-## Ссылки для сдачи
+## Ссылки для проверки
 
 - Репозиторий: [github.com/wVks/houseplants](https://github.com/wVks/houseplants).
 - [Итоговый отчёт PDF — 9 страниц](https://github.com/wVks/houseplants/blob/main/report/report.pdf).
